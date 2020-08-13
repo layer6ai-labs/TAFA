@@ -12,8 +12,16 @@ import gensim
 from collections import defaultdict
 from sklearn.feature_extraction.text import TfidfVectorizer
 import json
-from preprocess.yelp import save
+import pickle
 import spacy
+
+def save(obj, filename, directory=None):
+    if directory:
+        with open(os.path.join(directory, filename), "wb+") as file_out:
+            pickle.dump(obj, file_out)
+    else:
+        with open(filename, "wb+") as file_out:
+            pickle.dump(obj, file_out)
 
 
 P_REVIEW = 0.85
@@ -318,9 +326,9 @@ if __name__ == '__main__':
     np.save("{}/test/Val.npy".format(save_folder), x_test)
     np.save("{}/test/Val_Score.npy".format(save_folder), y_test)
 
-    print("{} test set size{}".format(now(), len(x_val)))
-    print("{} test size rating size{}".format(now(), len(y_val)))
-    print("{} training set size{}".format(now(), len(x_train)))
+    print("{} test set size {}".format(now(), len(x_val)))
+    print("{} test size rating size {}".format(now(), len(y_val)))
+    print("{} training set size {}".format(now(), len(x_train)))
 
     # #####################################2，building dictionary according to training set############################################
     user_reviews_dict = {}
@@ -375,13 +383,13 @@ if __name__ == '__main__':
     print(now())
     u_minNum, u_maxNum, u_averageNum, u_maxSent, u_minSent, u_pReviewLen, u_pSentLen = countNum(user_reviews_dict)
     print("user have at least {} reviews, at most {} reviews，on average {} reviews, " \
-         "max sentence length {}, minimum sentence length{}，" \
-         "setting review num {}： setting max sentence len{}".format(u_minNum, u_maxNum, u_averageNum, u_maxSent, u_minSent, u_pReviewLen, u_pSentLen))
+         "max sentence length {}, minimum sentence length {}，" \
+         "setting review num {}： setting max sentence len {}".format(u_minNum, u_maxNum, u_averageNum, u_maxSent, u_minSent, u_pReviewLen, u_pSentLen))
 
     i_minNum, i_maxNum, i_averageNum, i_maxSent, i_minSent, i_pReviewLen, i_pSentLen = countNum(item_reviews_dict)
     print("item have at least {} reviews at most {} reviews, on average {} reviews" \
-         "max sentence length {}, minimum sentence length{}，" \
-         "setting review num {}： setting max sentence len{}".format(i_minNum, i_maxNum, i_averageNum, u_maxSent, i_minSent, i_pReviewLen, i_pSentLen))
+         "max sentence length {}, minimum sentence length {}，" \
+         "setting review num {}： setting max sentence len {}".format(i_minNum, i_maxNum, i_averageNum, u_maxSent, i_minSent, i_pReviewLen, i_pSentLen))
     print("setting max sentence length：{}".format(max(u_pSentLen, i_pSentLen)))
     # ########################################################################################################
     maxSentLen = max(u_pSentLen, i_pSentLen)
@@ -466,7 +474,7 @@ if __name__ == '__main__':
             u_reviewList.append(text2index)
 
         if count_user >= 1:
-            print("No {}user have total {}reviews, after process {} are empty".format(i, len(textList), count_user))
+            print("No {} user have total {} reviews, after process {} are empty".format(i, len(textList), count_user))
 
         userReview2Index.append(padding_text(u_reviewList, u_pReviewLen))
         userDoc2Index.append(doc2index)

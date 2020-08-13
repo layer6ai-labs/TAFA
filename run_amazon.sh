@@ -1,4 +1,6 @@
+mkdir data
 cd data
+mkdir amazon
 
 wget https://recsys2020-layer6ai.s3.ca-central-1.amazonaws.com/glove_word2vec.txt?versionId=o.Az..HNB.tHbBpIV8bwTKlaoeyqjfcb -O glove_word2vec.txt
 wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Digital_Music_5.json.gz

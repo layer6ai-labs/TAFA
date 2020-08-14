@@ -9,6 +9,7 @@ Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, Maksims Volkovs
 ### Environment:
 * python 3.7.6
 * pytorch 1.4.0
+* pandas 1.0.3
 
 ### Instructions:
 For running TAFA on Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), please run the following command:

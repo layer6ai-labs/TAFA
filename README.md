@@ -2,7 +2,7 @@
 <a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
 </p>
 
-##RecSys'20 TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations [paper](http://www.cs.toronto.edu/~mvolkovs/recsys2020_tafa.pdf)
+## RecSys'20 TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations [paper](http://www.cs.toronto.edu/~mvolkovs/recsys2020_tafa.pdf)
 
 Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, Maksims Volkovs
 

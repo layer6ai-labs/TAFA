@@ -13,6 +13,11 @@ Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, Maksims Volkovs
 python 3.7.6
 pytorch 1.4.0
 pandas 1.1.0
+tqdm
+allennlp
+gensim
+cupy
+nltk
 ```
 <a name="instructions"/>
 

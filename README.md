@@ -1,6 +1,8 @@
-For running with Amazon dataset:
+Implementation for RecSys 2020 Paper TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations
+
+For running TAFA on Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), please run the following command:
 ```bash
-sh run_amazon.sh
+sh run_amazon.sh [digital_music|grocery_and_gourmet_food|video_games|cds_and_vinyl]
 ```
 References:
 ```

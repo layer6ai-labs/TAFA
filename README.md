@@ -8,15 +8,15 @@ Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, Maksims Volkovs
 
 <a name="Environment"/>
 
-### Environment:
-
-* python 3.7.6
-* pytorch 1.4.0
-* pandas 1.1.0
-
+## Environment:
+```
+python 3.7.6
+pytorch 1.4.0
+pandas 1.1.0
+```
 <a name="instructions"/>
 
-### Instructions:
+## Instructions:
 
 For running TAFA on Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), please run the following command:
 ```bash
@@ -25,13 +25,13 @@ sh run_amazon.sh [digital_music|grocery_and_gourmet_food|video_games|cds_and_vin
 
 <a name="citation"/>
 
-### Citation
+## Citation
 
 If you find this code useful in your research, please cite the following paper:
 
 <a name="references"/>
 
-### References:
+## References:
 
 <https://github.com/ShomyLiu/Neu-Review-Rec>
 

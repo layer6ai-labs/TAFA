@@ -1,6 +1,6 @@
 from utility.argument_check import *
 import torch.nn as nn
-import git
+# import git
 from models.TAFA import tafa
 from utility.data import *
 from scipy.sparse import csr_matrix
@@ -13,9 +13,9 @@ from utility.metrics import evaluate
 def main(args):
     progress = WorkSplitter()
     args_dictionary = vars(args)
-    repo = git.Repo(search_parent_directories=True)
-    sha = repo.head.object.hexsha
-    print('current git hash is {0}'.format(sha))
+    # repo = git.Repo(search_parent_directories=True)
+    # sha = repo.head.object.hexsha
+    # print('current git hash is {0}'.format(sha))
     print('loading data directory: {0}'.format(args.data_directory))
     print("Algorithm: {0}".format(args.model))
     progress.section("Loading Data")

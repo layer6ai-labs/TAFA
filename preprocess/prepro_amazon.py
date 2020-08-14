@@ -36,7 +36,7 @@ def now():
 
 
 def get_count(data, id):
-    idList = data[[id, 'ratings']].groupby(id, as_index=False)
+    idList = data[[id, 'ratings']].groupby(id, as_index=True)
     idListCount = idList.size()
     return idListCount
 

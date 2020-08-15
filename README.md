@@ -4,8 +4,7 @@
 
 ## RecSys'20 TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations
 
-Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
-
+Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)  
 [[paper](http://www.cs.toronto.edu/~mvolkovs/recsys2020_tafa.pdf)]
 
 <a name="Environment"/>

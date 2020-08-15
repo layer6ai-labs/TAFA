@@ -2,13 +2,17 @@
 <a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
 </p>
 
-## RecSys'20 TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations [paper](http://www.cs.toronto.edu/~mvolkovs/recsys2020_tafa.pdf)
+## RecSys'20 TAFA: Two-headed Attention Fused Autoencoder for Context-Aware Recommendations
 
-Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, Maksims Volkovs
+Authors: Jinpeng Zhou*, Zhaoyue Cheng*, Felipe Perez, [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
+
+[[paper](http://www.cs.toronto.edu/~mvolkovs/recsys2020_tafa.pdf)]
 
 <a name="Environment"/>
 
 ## Environment:
+
+The code was developed and tested on the following python environment:
 ```
 python 3.7.6
 pytorch 1.4.0
@@ -23,7 +27,7 @@ nltk
 
 ## Instructions:
 
-For running TAFA on Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), please run the following command:
+To train and eveluate TAFA on the Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), run the following command:
 ```bash
 sh run_amazon.sh [digital_music|grocery_and_gourmet_food|video_games|cds_and_vinyl]
 ```
@@ -34,12 +38,10 @@ sh run_amazon.sh [digital_music|grocery_and_gourmet_food|video_games|cds_and_vin
 
 If you find this code useful in your research, please cite the following paper:
 
-<a name="references"/>
+    @inproceedings{zhou2020tafa,
+      title={TAFA: {Two-headed} Attention Fused Autoencoder for Context-Aware Recommendations},
+      author={Jinpeng Zhou, Zhaoyue Cheng, Felipe Perez, Maksims Volkovs},
+      booktitle={RecSys},
+      year={2020}
+    }
 
-## References:
-
-<https://github.com/ShomyLiu/Neu-Review-Rec>
-
-<https://github.com/allenjack/GATE>
-
-[Coevolutionary Recommendation Model: Mutual Learning between Ratings and Reviews](https://dl.acm.org/doi/10.1145/3178876.3186158)

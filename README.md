@@ -27,7 +27,7 @@ nltk
 
 ## Instructions:
 
-To train and eveluate TAFA on the Amazon datasets (digital music, grocery and gourmet food, video games, cds and vinyl), run the following command:
+To train and eveluate TAFA on the [Amazon datasets](http://jmcauley.ucsd.edu/data/amazon) (digital music, grocery and gourmet food, video games, cds and vinyl), run this command:
 ```bash
 sh run_amazon.sh [digital_music|grocery_and_gourmet_food|video_games|cds_and_vinyl]
 ```
